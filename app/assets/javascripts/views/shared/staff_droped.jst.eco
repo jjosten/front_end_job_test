@@ -1,0 +1,9 @@
+<% @style = "" unless @style %>
+<% @shift = "" unless @shift %>
+<div class='employee-btn dragable removable dropped sp-tooltip <%= @style %> <%= 'initials' if @staff.initials == "true"%>' 
+    title='<%= @staff.name %>' data-toggle="tooltip" id="<%= @staff.el_id %>" 
+    data-id="<%= @staff.id %>" data-shift="<%= @shift %>"
+    data-staff="<%= @staff.staff %>" data-user="<%= @staff.user %>" 
+    data-position="<%= @staff.position %>" data-location="<%= @staff.location %>">
+      <%- @content %>
+</div>

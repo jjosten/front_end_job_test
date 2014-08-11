@@ -1,0 +1,43 @@
+$timeline-bg: $main-active-color;
+.timeline {
+    position: absolute;
+    left: 0;
+    border: none;
+    border-top: 1px solid $timeline-bg;
+	border-bottom: 1px solid $timeline-bg;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+	@include box-shadow( 0 1px 0 0 #fff);
+	&:before, &:after {
+		display: block; position: absolute; content: "";
+		padding: 0; margin: 0;
+		background: $timeline-bg;
+	}
+	&:before {
+		// content: "23:00";
+		content: attr(data-content);
+		top: -10px; left: 0;
+		width: 54px;
+		line-height: 20px;
+		text-align: center;
+		font-weight: normal;
+		z-index: 5;
+		@include border-right-radius(3px);
+		color: #333;
+		// text-shadow: 0 1px 0 #f3f2f2;
+		text-shadow: none;
+	}
+	&:after {
+		width: 14px; height: 14px;
+		top: -7px; left: 45px;
+		@include rotation(45);
+		z-index: 3;
+		@include border-radius(2px);
+	}
+}
+
+.fc-disabled {
+  background: rgba(100,100,100,0.1) !important;
+}

@@ -1,0 +1,57 @@
+.divider {
+	display: block; position: relative;
+	background: inherit;
+	text-align: center;
+	span {
+		display: inline-block; position: relative;
+		margin: 0 auto; padding: 0 15px;
+		background: inherit;
+		z-index: 3;
+		&.white-bg { background: #fff; }
+	}
+	&:after {
+		display: block; position: absolute; content: "";
+		margin: 0; padding: 0;
+		top: 50%; height: 1px;
+		left: 0; right: 0;
+		background: #ccc;
+		z-index: 1;
+	}
+	&.site {
+		span {
+			@include readFont;
+			color: #aaa;
+			text-shadow: 0 1px 0 #fff;
+		}
+		&:after {
+			background: #ccc;
+			@include box-shadow( 0 1px 0 0 #fff );
+		}
+	}
+}
+
+#front_footer .divider {
+	span { 
+		background: #333;
+		text-indent: -1000px;
+		overflow: hidden;
+		width: 180px;
+		height: 30px;
+		background-color: #333;
+		background-image: image-url('logo_shiftplan_dark.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	&:after { background: #000; @include box-shadow( 0 1px 0 0 rgba(255,255,255,.13) ); margin-top: -3px; }
+}
+
+
+.dot {
+	display: block; display: inline-block; position: relative;
+	width: 10px; height: 10px;
+	@include border-radius( 15px );
+	border: solid 1px $main-border-color;
+	&.ok { background: #55b8f7; border: solid 1px darken( #55b8f7, 10% ); }
+	&.warning { background: #f9a538; border: solid 1px darken( #f9a538, 10% ); }
+}

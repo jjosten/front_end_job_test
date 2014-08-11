@@ -1,0 +1,13 @@
+<div id='counter'>
+  <i class='glyphicon glyphicon-user'></i>
+  <span class="filled-slots"><%= parseInt(@shift.workers) - parseInt(@shift.open_slots) %></span>
+  <span>/</span>
+  <span class="slots"><%= @shift.workers %></span>
+  <% if @shift.shift_applications.length: %>
+   &nbsp;&nbsp; <span class="applicants"><i class="icon-pushpin"></i> <%= @shift.shift_applications.length %></span>
+  <% end %>
+
+  <% if @shift.change_applications.length: %>
+   &nbsp;&nbsp; <span class="applicants"><i class="glyphicon glyphicon-retweet"></i> <%= @shift.change_applications.length %></span>
+  <% end %>
+</div>

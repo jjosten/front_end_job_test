@@ -1,0 +1,15 @@
+<div class="btn-group">
+  <button type="button" class="btn btn-default calendar-prev-link">
+    <i class="glyphicon glyphicon-chevron-left"></i>
+  </button>
+  <button type="button" class="btn btn-default calendar-prev-link">
+    KW <%= @kw - 1 %>
+  </button>
+  <button type="button" class="btn btn-default active strong">KW <%= @kw %></button>
+  <button type="button" class="btn btn-default calendar-next-link">
+    KW <%= @kw + 1 %>
+  </button>
+  <button type="button" class="btn btn-default calendar-next-link">
+    <i class="glyphicon glyphicon-chevron-right"></i>
+  </button>
+</div>

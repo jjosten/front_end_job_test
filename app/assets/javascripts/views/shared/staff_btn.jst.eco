@@ -1,0 +1,14 @@
+<% @shift = "" unless @shift %>
+<% @id_prefix = "" unless @id_prefix %>
+<% id = "#{@id_prefix}staff-#{ @staff.user.id }" %>
+<% @add_class = "" unless @add_class %>
+<% @darggable = "yeah" unless @add_class %>
+<% drg = if @darggable == "yeah" then "dragable" else "" %>
+
+<% styles = "employee-btn #{drg} sp-tooltip #{'initials' if @staff.user.has_initials? == true} #{@add_class}" %>
+
+<div class="<%= styles %>" id="<%= id %>" data-toggle="tooltip" data-name="<%= @staff.user.presentation %>"
+  data-initials="<%= @staff.user.has_initials? %>" data-id="staff-<%= @staff.user.id %>" data-shift="<%= @shift %>"
+  data-staff="<%= @staff.id %>" data-user="<%= @staff.user.id %>" title="<%= @staff.user.presentation %>">
+  <img src="<%= @staff.user.image %>" alt="<%= @staff.user.presentation %>" />
+</div>

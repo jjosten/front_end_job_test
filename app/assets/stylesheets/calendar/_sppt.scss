@@ -1,0 +1,89 @@
+
+#calendar_kw_head { color: $main-active-color; }
+
+.fc-widget-header, .fc-widget-content { border: 1px solid $main-border-color; }
+
+#calendar {
+	
+	
+	
+	.fc-event {
+		&.open {
+			.fc-event-bg { background: transparent image-url("open_bg.gif");}
+		}
+		&.my-shift {
+			.fc-event-bg { background: #000;}
+		}
+		&.shift-change {
+			.fc-event-bg {
+				background-color: rgba(255,255,255,.50);
+				background-image: image-url("shiftchange_black.png");
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			&.white {
+				.fc-event-bg { background-image: image-url("shiftchange_white.png"); }
+			}
+		}
+		&.ui-state-default { 
+			// background: #fff image-url("dropable_bg.png") left top repeat;
+			// stop jquery-ui bg
+			background-image: none;
+			border: dotted 2px #fff !important;
+			.fc-event-bg {
+				opacity: 0.00;
+				// background: rgba(255,255,255,0.00);
+			}
+		}
+		&.ui-state-hover { 
+			// stop jquery-ui bg
+			background-image: none;
+			border: solid 2px #ccff00 !important;
+			.fc-event-bg {
+				opacity: 0.50;
+				// background: rgba(255,255,255,0.50);
+			}
+		}
+	}
+	
+	
+	
+	
+	// .fc-content { background: #fff; }
+	
+	.fc-widget-content.fc-state-highlight.fc-today {
+		background: transparentize($main-active-color, 0.8);
+	}
+	
+	.fc-agenda-days .fc-today.fc-widget-header { background: $main-active-color; color: #fff; }
+	
+	
+	
+	// background table
+	.fc-agenda-days {
+		
+		.fc-widget-content { background: #fff; }
+		
+	}
+	
+	.fc-agenda-allday .fc-widget-header.fc-agenda-axis {
+		font-size: 1px;
+		color: transparent;
+		width: 52px;
+	}
+	
+	.fc-agenda-divider.fc-widget-header {
+		border-color: transparent; background: $main-bg;
+		.fc-agenda-divider-inner { background: transparent; border: none; }
+		display: none;
+	}
+	.fc-agenda-allday tr td { border-bottom: solid 2px $main-border-color; }
+	
+	.fc-agenda .fc-agenda-axis {
+		border-color: transparent;
+		border-right-color: $main-border-color;
+		font-size: 12px;
+	}
+	
+}

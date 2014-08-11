@@ -1,0 +1,372 @@
+<div class="fullpage-table" id="front-banner">
+  <div class="table-row">
+    <div class="banner-box responsive-hero with-footer with-header fill wood">
+      <div class="banner-header">
+        <div class="corset">
+          <h1 class="loud">Wir schenken Dir Zeit!</h1>
+        </div>
+      </div>
+
+      <% if 3 == 4 %>
+      <%# First Version of Site: #%>
+        <div class="corset fixed-table fixed grid fill">
+          <div class="cell fill">
+            <div id="postit-notes"></div>
+          </div>
+          <div class="cell fill middle">
+            <ul class="feature-list">
+              <li><%= icon('checkmark') %> Kostenlose Schichtplanung</li>
+              <li><%= icon('checkmark') %> Vollautomatische Lohnabrechnung</li>
+              <li><%= icon('checkmark') %> Digitaler Vertragsabschluss</li>
+            </ul>
+          </div>
+        </div>
+      <% else %>
+      <%# New Version of Site: #%>
+        <div class="corset layout-table">
+          <div class="cell postits middle hide-xs">
+            <% if 3 == 3 %>
+              <div id="banner-postits"></div>
+            <% else %>
+              <%= image_tag "note_postits.png" %>
+            <% end %>
+          </div>
+          <div class="cell ipad middle video_button">
+            <% if 3 == 4 %>
+              <div id="banner-ipad"></div>
+            <% else %>
+              <div class="pic-wrapper">
+                <%= image_tag "ipad.png" %>
+              </div>
+            <% end %>
+          </div>
+          <div class="cell coffee middle hide-xs">
+            <% if 3 == 3 %>
+              <div id="banner-coffee"></div>
+            <% else %>
+              <%= image_tag "coffee.png" %>
+            <% end %>
+          </div>
+        </div>
+        <div class="corset compact">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 center_text">
+              <div class="landing-h2">Schichtplanung:</div>
+              <ul class="feature-list pressed">
+                <li><%= icon('checkmark') %> Kostenlos</li>
+                <li><%= icon('checkmark') %> Intuitiv</li>
+                <li><%= icon('checkmark') %> Mobil</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <% end %>
+
+      <div class="banner-footer" id="sign_up_banner">
+        <div class="corset">
+          <div class="row">
+            <% if 3 == 4 %>
+            <div class="col-sm-4 col-sm-offset-4">
+              <%= link_to t("buttons.sign_up_now"), new_user_registration_path, class: "btn btn-success btn-block btn-lg" %>
+            </div>
+            <% else %>
+              <form accept-charset="UTF-8" action="./SHYFTPLAN_files/SHYFTPLAN.html" autocomplete="off" class="new_user" id="new_user" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="S0xnX9azJ+N9oaZ6hZPUvbnGre+4TwHKwvgwkDaFx+Q="></div>
+                <div class="col-sm-4">
+                  <div class="icon_field fat mail">
+                    <input class="form-control input-lg" id="user_email" name="user[email]" placeholder="E-Mail" required="required" type="email" value="">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="icon_field fat password">
+                    <input class="form-control input-lg" id="user_password" name="user[password]" placeholder="Passwort" required="required" type="password">
+                  </div>
+                </div>
+                <div class="col-sm-4 call_to_action">
+                  <input class="btn btn-success btn-block btn-lg" name="commit" type="submit" value="Jetzt kostenlos Registrieren">
+                </div>
+                </form>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="section fat">
+  <div class="corset tight">
+
+    <div class="feature-box ready">
+      <div class="feature-icon">
+        <%= icon('checkmark') %>
+        <%= image_tag "icon_features/icon_save_money.png" %>
+      </div>
+      <h2 class="feature-heading">Kostenlose Schichtplanung</h2>
+      <p class="loud">
+        Wir nehmen unseren Slogan wörtlich. – <b>Wir schenken</b> dir Zeit!
+      </p>
+      <p class="loud">
+        Deshalb ist und bleibt die gesamte Schichtplanung kostenlos. Orte und Filialen erstellen, Personal hinzufügen, Schichtpläne teilen und dabei nie wieder einen Gedanken an den Kostenpunkt verschwenden.
+      </p>
+      <br/>
+      <p class="highlight">
+        Registriere dich gleich und habe alle Zeit der Welt!
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<div class="section fat hard-top">
+  <div class="corset tight">
+
+    <div class="feature-box ready">
+      <div class="feature-icon">
+        <%= icon('checkmark') %>
+        <%= image_tag "icon_features/icon_shedule.png" %>
+      </div>
+      <h2 class="feature-heading">Intuitive Schichtplanung</h2>
+      <p class="loud">
+        Vorbei ist die Zeit, in der die Einsatzplanung manuell und umständlich in Excel oder auf dem Whiteboard entstanden ist.
+      </p>
+      <p class="loud">
+        Von nun an können Schichtpläne intuitiv und gemeinsam mit Mitarbeitern erstellt werden. Vergessen ist lästiges Abstimmen und Unmut über unpassende Schichten. Alle können jederzeit auf Pläne und Verfügbarkeiten zugreifen.
+      </p>
+      <br/>
+      <p class="highlight">
+        Gemeinsam ist die Planung kinderleicht! – So wie es sein soll.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<div class="section fat hard-top">
+  <div class="corset tight">
+
+    <div class="feature-box ready">
+      <div class="feature-icon">
+        <%= icon('checkmark') %>
+        <%= image_tag "icon_features/icon_mobile.png" %>
+      </div>
+      <h2 class="feature-heading">Mobile Schichtplanung</h2>
+      <p class="loud">
+        Für die Schichtplanung an den Schreibtisch gefesselt? Das ist jetzt vorbei!
+      </p>
+      <p class="loud">
+        Einfach Schichtpläne flexibel von überall erstellen. Egal ob mit dem Smartphone, Tablet oder Laptop, von nun an hast du die Wahl, wo und wann du arbeitest.
+      </p>
+      <br/>
+      <p class="highlight">
+        Medienbrüche und Papierkrieg gehören der Vergangenheit an!
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<div class="section flatted hard-top">
+  <div class="corset">
+    <div class="layout-table grid feature-box pending">
+      <div class="cell feature-pic middle">
+        <div class="feature-icon">
+          <%#= icon('checkmark') %>
+          <%= image_tag "icon_features/icon_invoice.png" %>
+        </div>
+        <div class="feature-soon">
+          coming soon
+        </div>
+      </div>
+      <div class="cell middle left-text-sm">
+        <h2 class="feature-heading">1-Klick Lohnabrechnung</h2>
+        <p class="loud">
+          Viele Informationen auf noch mehr komplizierten Zetteln. Dazu noch Beamtendeutsch, das fast kein Mensch versteht,
+          geschweige denn spricht. Das wussten die Experten und ließen es sich in Gold aufwiegen. So sah die
+          Lohnabrechnung bis heute für die meisten von uns aus.
+        </p>
+        <p class="loud">
+          Doch mit shyftplan wird das alles einfach. Da wir schon wissen wer wann wo gearbeitet hat und alle
+          Informationen auch noch digital vorliegen, kannst du über shyftplan.com die Lohnmeldung ganz einfach
+          mit nur einem Klick machen.
+        </p>
+        <p class="highlight">
+          Und das auch noch alles viel günstiger als beim Steuerberater!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section flatted hard-top">
+  <div class="corset">
+    <div class="layout-table grid feature-box pending">
+      <div class="cell feature-pic middle">
+        <div class="feature-icon">
+          <%#= icon('checkmark') %>
+          <%= image_tag "icon_features/icon_contract.png" %>
+        </div>
+        <div class="feature-soon">
+          coming soon
+        </div>
+      </div>
+      <div class="cell middle left-text-sm">
+        <h2 class="feature-heading">1-Klick Vertragsabschluss</h2>
+        <p class="loud">
+          Was gehörte nochmal in den Arbeitsvertrag für einen Werkstudenten? Wo hatten wir den Vertrag schon wieder hingelegt?
+          Ist der Vertrag auch konform mit den Arbeitsrechtsbestimmungen? Solche Fragen lassen jedem Unternehmer die
+          Haare grau werden.
+        </p>
+        <p class="loud">
+          Aber mit shyftplan kannst du dir jetzt das Haarfärbemittel sparen. Unsere hinterlegten Arbeitsverträge von
+          Experten helfen euch alles abzudecken und nichts zu vergessen. Die Verträge können direkt digital von beiden
+          Parteien unterzeichnet werden.
+        </p>
+        <p class="highlight">
+          Kein Papierkrieg und kein Stress dank shyftplan.com.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section flatted hard-top">
+  <div class="corset">
+    <div class="layout-table grid feature-box pending">
+      <div class="cell feature-pic middle">
+        <div class="feature-icon">
+          <%#= icon('checkmark') %>
+          <%= image_tag "icon_features/icon_recruting.png" %>
+        </div>
+        <div class="feature-soon">
+          coming soon
+        </div>
+      </div>
+      <div class="cell middle left-text-sm">
+        <h2 class="feature-heading">Easy Recruiting</h2>
+        <p class="loud">
+          Haben wir den Zettel im Schaufenster? Wir brauchen dringend eine neue Aushilfe für nächste Woche! Können
+          wir vielleicht eine im Netz finden?
+        </p>
+        <p class="loud">
+          Ja! Auf shyftplan.com kannst du ganz einfach deine freie Stelle ausschreiben und passendes Personal finden.
+        </p>
+        <p class="highlight">
+          Mit nur einem Klick kannst du den Vertrag online schließen und hast mal wieder ein paar Bäume gerettet!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section flatted hard-top">
+  <div class="corset">
+    <div class="layout-table grid feature-box pending">
+      <div class="cell feature-pic middle">
+        <div class="feature-icon">
+          <%#= icon('checkmark') %>
+          <%= image_tag "icon_features/icon_payment.png" %>
+        </div>
+        <div class="feature-soon">
+          coming soon
+        </div>
+      </div>
+      <div class="cell middle left-text-sm">
+        <h2 class="feature-heading">1-Klick Payment</h2>
+        <p class="loud">
+          Wer bekommt nochmal welches Gehalt? Haben wir das Geld für die Krankenversicherungen überwiesen?
+          All diese Fragen und der ganze manuelle Aufwand, diese Daten auch noch deiner Bank für die
+          Überweisungen zu geben, sind wahrlich keine Freude.
+        </p>
+        <p class="loud">
+          Mit shyftplan hingegen kannst du alle Überweisungen mit nur einem Klick in die Wege leiten. Du musst
+          kein anderes System mehr nutzen oder gar Daten per Hand aufschreiben.
+        </p>
+        <p class="highlight">
+          Ein Klick – und was du mit der gewonnen Zeit machst, kannst du ganz alleine entscheiden!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section flat-top flatted">
+  <div class="corset">
+
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-4">
+        <%= mail_to "service@shyftplan.com", "Nenn uns Deine Wünsche!",
+         subject: "Feature Request",  class: "btn btn-warning btn-sm btn-block" %>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<% businesses = %w(cafe friseur einzelhandel restaurant supermarkt callcenter personalagentur) %>
+<div class="section dark hard-top">
+  <div class="container">
+
+    <div class="icn-link-bar">
+
+      <% businesses.each_with_index do |that, index| %>
+      <div class="icn-link <%= 'active' if index == 0 %>" data-target="#business-carousel" data-slide-to="<%= index %>">
+        <div class="icn-img">
+          <%= image_tag "icon_business/icon_#{that}.png" %>
+        </div>
+        <div class="name">
+          <%= t("front.start.business_links.#{that}") %>
+        </div>
+      </div>
+      <% end %>
+
+    </div>
+
+    <div id="business-carousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <% businesses.each_with_index do |that, index| %>
+          <li data-target="#business-carousel" data-slide-to="<%= index %>" class="<%= 'active' if index == 0 %>"></li>
+        <% end %>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <% businesses.each_with_index do |that, index| %>
+        <div class="item <%= 'active' if index == 0 %>">
+          <div class="corset">
+            <div class="business-feature">
+              <p class="loud"><%= t("front.start.business_text.#{that}") %></p>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+
+      <% if 3 == 4 %>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#business-carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#business-carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+<div class="video_overlay" style='display:none'>
+  <div class="landing_video_background">
+    <div class="landing_video_div">
+      <div id="video_iframe">
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render "navigations/front_footer" %>

@@ -1,0 +1,138 @@
+.help_window, .help_overlay {
+  color: white;
+}
+
+.help_window {
+  width: 100%;
+  height: 110%;
+  position: fixed;
+  z-index: 1000;
+  top: -20px;
+  background-image: url(image_path('help-background-images.png'));
+  cursor: pointer;
+  @include transition (all 2.0s ease-in-out);
+  .help_company {
+    width: 240px;
+    height: 62px;
+    position: absolute;
+    .back_image{
+      background: transparent url(image_path('arrows/arrow-round1-a.png')) 80px center no-repeat;
+      background-size:80px 60px;
+      @include rotation(45);
+      width: 100%;
+      height: 100%;
+    }
+    span {
+      float: right;
+      text-align: justify;
+    }
+    top: 51px;
+    left: 20px;
+  }
+
+  .help_shyftplan {
+    width: 240px;
+    height: 62px;
+    position: absolute;
+    top: 333px;
+    left: 45%;
+    text-align: justify;
+    .back_image{
+      background: transparent url(image_path('arrows/arrow-round1-a.png')) 0 center no-repeat;
+      @include rotation(150);
+      width: 100%;
+      height: 100%;
+      background-size: 170px 170px;
+    }
+    span {
+      margin-top:20px;
+    }
+  }
+  .remove {
+    position: absolute;
+    top: 70px;
+    right: 2%;
+    cursor: pointer;
+    @include transition (all 0.2s ease-in-out);
+    &:hover {
+      font-size: 20px;
+    }
+  }
+
+
+
+}
+
+@include responsiveStep-xs-only {
+  .help_window { display: none !important; }
+  .help_overlay { display: none !important; }
+}
+
+.help_users {
+    width: 260px;
+    height: 62px;
+    position: absolute;
+    top: 32px;
+    left: -103px;
+    z-index: 1001;
+    margin-left: 70px;
+    .back_image{
+      background: transparent url(image_path('arrows/arrow-round1-b.png')) 50px center no-repeat;
+      background-size:80px 60px;
+      @include rotation(200);
+      width: 100%;
+      height: 100%;
+    }
+    span {
+      float: right;
+      margin-top:20px;
+      text-align: justify;
+    }
+  }
+
+  .help_shyftplan_nav {
+    width: 264px;
+    height: 62px;
+    position: absolute;
+    top: -9%;
+    left: 27%;
+    z-index: 1002;
+    .back_image{
+      background: transparent url(image_path('arrows/arrow-round2-b.png')) 68px -24px no-repeat;
+      background-size:80px 60px;
+      @include rotation(200);
+      width: 100%;
+      height: 100%;
+    }
+    span {
+      float: right;
+      margin-top:15px;
+      margin-left:12px;
+      text-align: justify;
+    }
+  }
+
+  .help_publish {
+    text-align: justify;
+    width: 250px;
+    height: 62px;
+    position: absolute;
+    top: 70px;
+    z-index: 1002;
+    left: 0%;
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 12px;
+    .back_image{
+      background: transparent url(image_path('arrows/arrow2-a.png')) 20px center no-repeat;
+      @include rotation(90);
+      background-size:130px 130px;
+      width: 100%;
+      height: 30%;
+    }
+    span {
+      text-align: justify;
+      font-weight: normal;
+      font-size: 12px;
+    }
+  }

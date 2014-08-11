@@ -1,0 +1,16 @@
+.circleBase {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+.add_button {
+  width: 38px;
+  height: 38px;
+  border: 1px dotted green;
+  float: left;
+}
+
+.icon-add {
+  background-image: image-url("fallbacks/plus2_360.png");
+  background-size: 100%;
+}

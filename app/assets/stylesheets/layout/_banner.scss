@@ -1,0 +1,196 @@
+//## Header / Banner
+.banner-footer, .banner-header 
+{
+	display: block; position: relative;
+	margin: 0; padding: 0;
+}
+
+
+.banner-box.press {
+	margin: 0; padding: 10px 0;
+}
+
+.banner-box.responsive-hero {
+	padding: 10px;
+	& > .corset, & > .container {
+		padding-top: 20px; padding-bottom: 20px;
+		&.compact { padding-top: 0; padding-bottom: 0; }
+	}
+	h1.loud {
+		text-align: center;
+		color: #fff;
+		padding: 0;
+		font-size: 50px;
+		line-height: 60px;
+		text-shadow: 0 1px 1px #000;
+	}
+	&.wood {
+		background-color: rgba(255,255,255,.50);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment:fixed;
+		// background-image: image-url('banner/wood_480.jpg');
+		background-image: image-url('banner/wood_780.jpg');
+	}
+	.banner-footer { 
+		padding: 20px 0;
+		background-color: rgba(255,255,255,.30);
+		z-index: 15; 
+	}
+	.banner-header { 
+		padding: 20px 0 10px;
+		background-color: transparent;
+		z-index: 15;
+	}
+	
+	img { max-width: 100%; }
+}
+
+
+#postit-notes {
+	display: block; position: absolute;
+	top: 10px; right: 10px; bottom: 10px; left: 10px;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: image-url('note_postits.png');
+}
+
+.feature-list {
+	display: block; position: relative;
+	margin: 10px 20px; padding: 0;
+	list-style: none;
+	&.pressed {
+		margin: 0;
+		display: inline-block;
+		text-align: left;
+	}
+	li {
+		display: block; position: relative;
+		margin: 0; padding: 5px;
+		color: #fff;
+		font-size: 20px;
+		@include sansCondensedThin;
+		text-shadow: 0 1px 1px #000;
+		i {
+			color: $main-active-color;
+			margin-right: 5px;
+		}
+	}
+}
+
+#banner-postits, #banner-ipad, #banner-coffee {
+	display: block; position: relative;
+	margin: 0; padding: 0;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#banner-postits {
+	position: absolute;
+	top: -30px; right: -70px; bottom: -50px; left: 0;
+	background-image: image-url('notizen2.png');
+}
+
+#banner-ipad {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-image: image-url('ipad.png');
+	min-height: 200px;
+}
+
+#banner-coffee {
+	position: absolute;
+	top: 80px; right: 10px; bottom: 10px; left: 10px;
+	background-image: image-url('cup.png');
+}
+
+
+.banner-box.responsive-hero .layout-table > .cell {
+	text-align: center;
+	img { max-width: 100%;}
+}
+
+.pic-wrapper {
+	width: 100%;
+	max-width: 100%;
+}
+
+// more than 490px
+@include responsiveStep-xs2 {
+	.banner-box.responsive-hero.wood { background-image: image-url('banner/wood_780.jpg'); }
+}
+// more than 768px
+@include responsiveStep-sm {
+	.banner-box.responsive-hero.wood { background-image: image-url('banner/wood_1000.jpg'); }
+	.banner-box.responsive-hero {
+		
+		.layout-table > .cell {
+			&.postits { width: 40%; }
+			&.ipad { width: 40%; }
+			&.coffee { width: 20%; }
+		}
+		.banner-footer { 
+			position: absolute; 
+			bottom: 0; left: 0; right: 0;
+		}
+		.banner-header { 
+			position: absolute; 
+			top: 0; left: 0; right: 0;
+		}
+		&.with-footer { padding-bottom: 100px !important; }
+		&.with-header { padding-top: 100px !important; }
+		
+		.call_to_action {
+			&:before {
+				display: block; position: absolute; content: "";
+				background: transparent image-url('arrows/arrow-round2-b.png') left top no-repeat;
+				background-size: contain;
+				top: -170px; left: 50px;
+				width: 200px; height: 200px;
+				@include rotation(45);
+				z-index: -2;
+				@include transition (all 0.2s ease-in-out);
+			}
+		}
+		
+	}
+	
+	
+	#sign_up_banner.affix {
+		position: fixed; top: 42px;
+		left: 0; right: 0;
+		background: rgba( 255,255,255,.42 );
+		z-index: 1050;
+		@include transform( translateZ( 0 ) );
+		height: 82px;
+		.call_to_action:before {
+			width: 100px; height: 100px;
+			top: -85px;
+			left: 70px;
+			z-index: -2;
+		}
+		input, .btn { z-index: 1155; }
+	}
+	
+}
+// more than 992px
+@include responsiveStep-md {
+	.banner-box.responsive-hero.wood { background-image: image-url('banner/wood_1200.jpg'); }
+}
+// more than 1200px
+@include responsiveStep-lg {
+	.banner-box.responsive-hero.wood { background-image: image-url('banner/wood_1600.jpg'); }
+}
+// more than 1600px
+@include responsiveStep-xl {
+	.banner-box.responsive-hero.wood { background-image: image-url('banner/wood_2000.jpg'); }
+}
+// more than 2000px
+@include responsiveStep-xxl {
+	.banner-box.responsive-hero.wood { background-image: image-url('banner/wood_2500.jpg'); }
+}
+

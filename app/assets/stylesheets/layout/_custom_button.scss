@@ -1,0 +1,51 @@
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 999px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.btn-hover-danger {
+    &:hover{
+        color: $btn-danger-color; 
+        background-color: $btn-danger-bg; 
+        border-color: $btn-danger-border;
+        span{
+            display: none;
+        }
+        &:before {
+            content: attr(data-hover);
+        }
+    }
+}
+
+.btn-hover-success {
+    &:hover{
+        color: $btn-success-color; 
+        background-color: $btn-success-bg; 
+        border-color: $btn-success-border;
+        span{
+            display: none;
+        }
+        &:before {
+            content: attr(data-hover);
+        }
+    }
+}
+
+.btn-publish {
+    width: 110px;
+}
