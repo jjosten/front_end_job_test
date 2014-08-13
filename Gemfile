@@ -12,7 +12,7 @@ gem 'sqlite3'
 gem 'sass-rails',     '~> 4.0.3'
 gem 'uglifier',       '>= 1.3.0'
 gem 'coffee-rails',   '~> 4.0.0'
-# gem 'therubyracer',  platforms: :ruby
+gem 'therubyracer',  platforms: :ruby
 gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 4.2.1'
 gem 'bourbon',        '~> 3.2.1'
@@ -56,3 +56,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'execjs'
