@@ -1,9 +1,12 @@
 body {
-	&.InternetExplorer, &.Firefox {
+	&.InternetExplorer {
 		
 		.banner-box.responsive-hero.wood { background-attachment: scroll; }
 		
-		&.Firefox-29 {
+		
+		
+	}
+    &.OldFirefox {
 			#banner-postits {
 				left: 0;
 				width: 50%;
@@ -14,7 +17,5 @@ body {
 				width: 18%;
 			}
 		}
-		
-	}
 }
 

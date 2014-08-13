@@ -1,23 +1,44 @@
 <div class="fullpage-table accnt-form">
   <div class="table-row">
-    <div class="banner-box responsive-hero fill">
+    <div class="banner-box responsive-hero fill loginModule">
+    <div class="loginLogo">
+        <img src="/assets/logo_shiftplan_dark.png" />
+    </div>
       <div class="clearfix"></div>
             <form accept-charset="UTF-8" action="./SHYFTPLANLOGIN_files/SHYFTPLANLOGIN.html" class="centered-form" id="new_user" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="S0xnX9azJ+N9oaZ6hZPUvbnGre+4TwHKwvgwkDaFx+Q="></div>
 
-        <h2>Anmelden</h2>
+            
+                
+        <div class="loginFormTitle"><h2>Anmelden</h2></div>
 
         <div class="inpt-group">
           <input autofocus="autofocus" class="form-control" id="user_email" name="user[email]" placeholder="E-Mail" required="required" type="email" value="">
           <input class="form-control" id="user_password" name="user[password]" placeholder="Passwort" required="required" type="password">
+            <p class="passValidation"></p>
         </div>
           <div class="press"><input name="user[remember_me]" type="hidden" value="0"><input id="user_remember_me" name="user[remember_me]" type="checkbox" value="1"> <label for="user_remember_me">Remember me</label></div>
-        <input class="btn btn-lg btn-primary btn-block" name="commit" type="submit" value="Anmelden">
-</form>      <div class="clearfix"></div>
+                
+        
+                
+          <div class="bigButtonOutliner">
+            <div class="bigButtonContainer">
+                <div class="bigButton">
+                    <span>ANMELDEN</span>
+                </div>
+            </div>
+            <input class="buttonAction" name="commit" type="submit" value="Anmelden">
+        </div>      
+</form>      
+        
+        
+        
+        
+        <div class="clearfix"></div>
 
       <div class="clearfix"></div>
     </div>
   </div>
-  <div class="table-row">
+  <div class="table-row loginFooter">
     <div class="form-table-footer">
       <div class="corset center_text">
         <p>Sie haben noch keinen account? Dann melden Sie sich <a href="http://localhost:3000/register">hier</a> an. Haben Sie <a href="http://localhost:3000/password/new">Probleme</a> beim Anmelden.</p>
