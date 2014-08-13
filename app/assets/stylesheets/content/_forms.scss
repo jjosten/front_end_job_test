@@ -69,3 +69,16 @@
 	color: red;
 	border: solid 1px red;
 }
+
+/* New classes for login form */
+.form-login {
+    margin: 10px auto;
+    max-width: 350px;
+    padding: 15px;
+    text-align: center;
+}
+
+.has-error {
+    color: #b94a48;
+    font-weight: bold;
+}
