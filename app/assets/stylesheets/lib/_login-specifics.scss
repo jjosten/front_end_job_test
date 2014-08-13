@@ -1,0 +1,150 @@
+div.loginLogo {
+    width: 60%;
+    height: 20px;
+    margin: 50px auto 35px;
+    padding: 0 25px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    
+    img {
+        margin: -41px auto 0;
+        background: #2D4A67;
+        padding: 0 10px;
+    }
+}
+
+//HIDE BIG LOGO ON MOBILE
+/*@media and screen (max-width: 767px) {
+    div.loginLogo { display: none; }
+}*/
+        
+div.loginModule form.centered-form div.loginFormTitle {
+    width: 90%;
+    height: 5px;
+    margin: 15px auto 25px;
+    padding: 0 70px;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.2);
+
+    h2 {
+        margin: -14px auto 0;
+        background: #fff;
+        padding: 0 10px;
+        font-size: 1.75em;
+        color: #555;
+    }
+}
+
+
+
+div.loginModule.responsive-hero.fill {
+    background: #2D4A67;
+    
+    form.centered-form {
+        border-radius: 15px;
+        background: #fff;
+        padding: 25px 15px;
+        
+        input.form-control {
+            text-indent: 35px;
+        }        
+        #user_email {
+            background: url("icon-email.png") left 10px center no-repeat;
+        }
+        #user_password {
+            background: url("icon-password.png") left 10px center no-repeat;
+        }
+        label {
+            color: #333;
+        }
+        div.press > input {
+                margin: 0;
+                vertical-align: middle;
+        } 
+    }
+}
+
+div.table-row.loginFooter div.corset {
+    padding: 20px 0 10px;
+}
+
+
+
+
+/*********************************** ANMELDEN BUTTON STYLES ******************************************/
+.bigButtonOutliner {
+    width: 250px;
+    border: 2px solid #555;
+    border-radius: 17px;
+    margin: 15px auto 0;
+    position: relative;
+    
+    &:hover .bigButton {
+        background: #aeaeae; /* Old browsers */
+        background: -moz-linear-gradient(top,  #aeaeae 0%, #c7c7c7 49%, #d1d1d1 52%, #e2e2e2 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aeaeae), color-stop(49%,#c7c7c7), color-stop(52%,#d1d1d1), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #aeaeae 0%,#c7c7c7 49%,#d1d1d1 52%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #aeaeae 0%,#c7c7c7 49%,#d1d1d1 52%,#e2e2e2 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #aeaeae 0%,#c7c7c7 49%,#d1d1d1 52%,#e2e2e2 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #aeaeae 0%,#c7c7c7 49%,#d1d1d1 52%,#e2e2e2 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aeaeae', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
+    }
+}
+.bigButtonContainer {
+    background: #aeaeae; /* Old browsers */
+    background: -moz-linear-gradient(top,  #aeaeae 0%, #c7c7c7 49%, #d1d1d1 52%, #e2e2e2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aeaeae), color-stop(49%,#c7c7c7), color-stop(52%,#d1d1d1), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #aeaeae 0%,#c7c7c7 49%,#d1d1d1 52%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #aeaeae 0%,#c7c7c7 49%,#d1d1d1 52%,#e2e2e2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #aeaeae 0%,#c7c7c7 49%,#d1d1d1 52%,#e2e2e2 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #aeaeae 0%,#c7c7c7 49%,#d1d1d1 52%,#e2e2e2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aeaeae', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
+
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 15px;
+}
+.bigButton {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    background: #e2e2e2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e2e2e2 0%, #d1d1d1 48%, #c7c7c7 51%, #aeaeae 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(48%,#d1d1d1), color-stop(51%,#c7c7c7), color-stop(100%,#aeaeae)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e2e2e2 0%,#d1d1d1 48%,#c7c7c7 51%,#aeaeae 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e2e2e2 0%,#d1d1d1 48%,#c7c7c7 51%,#aeaeae 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e2e2e2 0%,#d1d1d1 48%,#c7c7c7 51%,#aeaeae 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e2e2e2 0%,#d1d1d1 48%,#c7c7c7 51%,#aeaeae 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#aeaeae',GradientType=0 ); /* IE6-9 */
+
+    padding: 10px 0;
+
+}
+.bigButton span {
+    color: #555555;
+    font-size: 20px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+}
+.bigButton span:before,
+.bigButton span:after {
+    font-family: FontAwesome;
+    content: "\f005";
+    margin: 0 10px;
+    color: #888888;
+}
+.buttonAction {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+form#new_user div.inpt-group p {
+    color: red;
+    text-align: left;
+    margin-top: 3px;
+}
+form#new_user div.press {
+    margin: 20px 0;
+}

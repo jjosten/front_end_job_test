@@ -11,6 +11,7 @@
 
 @import "lib/icomoon";
 @import "lib/color-picker";
+@import "lib/login-specifics";
 
 
 @import "layout/section";
@@ -683,6 +684,10 @@ progress[value]::-webkit-progress-value {
 		left: 50%;
 		margin-left: -200px;
 	}
+    
+    //HIDE BIG LOGO ON MOBILE
+    div.loginLogo { display: none; }
+    form.centered-form { margin: 30px auto 20px; }
 }
 
 .landing_video_background {
