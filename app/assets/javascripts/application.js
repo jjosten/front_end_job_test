@@ -13,6 +13,10 @@
 //= require lib/bootstrap_modal
 //= require lib/youtube_player
 //= require lib/datepicker
+//= require lib/jquery.validate
+//= require lib/jquery.validate.additional.methods
+//= require lib/jquery.validate.localization/methods_de
+//= require lib/jquery.validate.localization/messages_de
 //- ..
 //= require i18n
 //= require i18n/translations
@@ -34,7 +38,7 @@
 //- ..
 //= require_tree ./app
 //- ..
-
+//= require views/login
 
 
 $('body').on('hidden.bs.modal', '.modal', function () {
