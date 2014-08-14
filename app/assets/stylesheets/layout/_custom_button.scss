@@ -49,3 +49,153 @@
 .btn-publish {
     width: 110px;
 }
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 999px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.btn-hover-danger {
+    &:hover{
+        color: $btn-danger-color; 
+        background-color: $btn-danger-bg; 
+        border-color: $btn-danger-border;
+        span{
+            display: none;
+        }
+        &:before {
+            content: attr(data-hover);
+        }
+    }
+}
+
+.btn-hover-success {
+    &:hover{
+        color: $btn-success-color; 
+        background-color: $btn-success-bg; 
+        border-color: $btn-success-border;
+        span{
+            display: none;
+        }
+        &:before {
+            content: attr(data-hover);
+        }
+    }
+}
+
+.btn-publish {
+    width: 110px;
+}
+
+
+// Custom button for Log-In
+.btn-cntr {
+    position:relative;
+    width:auto;
+    display:block;
+}
+.btn-cntr:after,
+.btn-cntr:before {
+    color: #888888;
+    content: "\2605";
+    font-size: 2.7em;
+    position: absolute;    
+    text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+    z-index:10;
+    top: 24%;
+    line-height: 0.8em;
+}
+.btn-cntr:after {
+    right: 14%;
+}
+.btn-cntr:before {
+    left: 14%;
+}
+
+.btn-cstm {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 2em;
+    color: #555555;
+    text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #E1E1E1),
+        color-stop(0.5, #E1E1E1),
+        color-stop(0.5, #ADADAD),
+        color-stop(1, #ADADAD)
+    );
+    background-image: -o-linear-gradient(top, #E1E1E1 0%, #E1E1E1 50%, #ADADAD 50%, #ADADAD 100%);
+    background-image: -moz-linear-gradient(top, #E1E1E1 0%, #E1E1E1 50%, #ADADAD 50%, #ADADAD 100%);
+    background-image: -webkit-linear-gradient(top, #E1E1E1 0%, #E1E1E1 50%, #ADADAD 50%, #ADADAD 100%);
+    background-image: -ms-linear-gradient(top, #E1E1E1 0%, #E1E1E1 50%, #ADADAD 50%, #ADADAD 100%);
+    background-image: linear-gradient(to top, #E1E1E1 0%, #E1E1E1 50%, #ADADAD 50%, #ADADAD 100%);
+
+    border-radius: 8px;
+    border: 0;
+    text-transform: uppercase;
+    padding:0.4em 2.4em;
+    position: relative;   
+    
+
+    box-shadow: 0 0 0 1px #ababab, 
+                0 1px 2px 2px #808080, 
+                0 0 0 6px #c3c3c3, 
+                0 0 0 8px #c3c3c3, 
+                0 0 0 10px #fff, 
+                0 0px 1px 12px #666666;
+}
+
+.btn-cntr:hover .btn-cstm {
+    background: #fff;
+    box-shadow: 0 0 0 1px #ababab, 
+                0 1px 2px 1px #808080, 
+                0 0 0 6px #c3c3c3, 
+                0 0 0 8px #c3c3c3, 
+                0 0 0 10px #fff, 
+                0 0px 1px 11px #fff;
+}
+
+.btn-cstm:active {
+    position: relative;
+    top: 1px;
+}
+
+.btn-cstm:focus {
+    outline: 0;
+    
+}
+@media screen and (max-width: 370px){
+    .btn-cstm {
+        font-size:1.7em;
+        padding:0.3em 2.3em;
+    }
+    .btn-cntr:before {
+        font-size: 2.6em; 
+    }
+    .btn-cntr:after {
+        right: 12%;
+    }
+    .btn-cntr:before {
+        left: 12%;
+    }
+}
