@@ -66,7 +66,45 @@ $(function() {
       }
     });
 
+    /*Basic Form Password Validation*/
 
+    function showErrorMsg() {
+        var errMsg = $('<p/>', {
+            'class': 'errMsg',
+            'html': 'Password must be grater than 6 characters'
+        });
+        $('#new_user').prepend(errMsg);
+    }
+
+    $('#new_user input[type=button]').on('click', function() {
+
+        var valid = true;
+        var $pass1 = $("#user_password");
+        $('#new_user input').each(function() {
+            var $this = $(this);
+            if (!$this.val()) {
+                valid = false;
+                $this.addClass('error');
+            } else {
+                $this.removeClass('error');
+            }
+        });
+
+        if ($pass1.val().length < 7) {
+            $pass1.addClass('error');
+            $('#new_user .errMsg').remove();
+            showErrorMsg();
+            valid = false;
+        }
+
+        if (!valid) {
+            return false;
+
+        } else {
+            $('#new_user input').removeClass('error');
+            $('#new_user').submit();
+        }
+    });
 });
 
 

@@ -12,7 +12,11 @@ module FrontHelper
           browser = "Chrome Chrome-#{ result.split('Chrome/')[1].split(' ').first.split('.').first }"
         end
       elsif result =~ /Firefox/
-        browser = "Firefox Firefox-#{ result.split('Firefox/')[1].split('.').first }"
+        ver = result.split('Firefox/')[1].split('.').first
+        if ver.to_f <= 29
+          browser = "Firefox Firefox-legacy"
+        else browser = "Firefox Firefox-#{ ver }"
+        end        
       elsif result =~ /Opera/
         browser = "Opera Opera-#{ result.split('Version/')[1].split('.').first }"
       elsif result =~ /MSIE/
